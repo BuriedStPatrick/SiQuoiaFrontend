@@ -28,7 +28,7 @@ public class CommandFactory {
     }
     
     private void setupCommands(){
-        commands.put("home", new HomeCommand());
+        commands.put("home", new HomeCommand("index.jsp"));
     }
     
     public Command findCommand(String name){

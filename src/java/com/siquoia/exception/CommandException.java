@@ -1,8 +1,9 @@
+package com.siquoia.exception;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.siquoia.exception;
 
 /**
  *
@@ -10,7 +11,14 @@ package com.siquoia.exception;
  */
 public class CommandException extends Exception{
     
-    public String getErrorTarget(){
-        return "/error.jsp";
+    String origin;
+
+    public CommandException(String origin) {
+        this.origin = origin;
     }
+    
+    public String getErrorTarget() {
+        return super.getMessage(); //To change body of generated methods, choose Tools | Templates.
+    }
+    
 }

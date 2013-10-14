@@ -13,6 +13,10 @@ import javax.servlet.http.HttpServletRequest;
  */
 public class HomeCommand extends TargetCommand{
 
+    public HomeCommand(String target) {
+        super(target);
+    }
+    
     @Override
     public String execute(HttpServletRequest req) throws CommandException {
         return super.execute(req); //To change body of generated methods, choose Tools | Templates.
