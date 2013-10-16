@@ -19,8 +19,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author PC
  */
-@WebServlet(name = "FrontController", urlPatterns = {"/FrontController"})
-public class FrontController extends HttpServlet {
+@WebServlet(name = "SiquoiaFrontController", urlPatterns = {"/SiquoiaFrontController"})
+public class SiquoiaFrontController extends HttpServlet {
 
     @Override
     public void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
