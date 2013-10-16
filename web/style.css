@@ -1,0 +1,16 @@
+/* 
+    Document   : style
+    Created on : 16-10-2013, 14:33:03
+    Author     : Patrick Christensen
+    Description:
+        This sheet contains the standard style for the site SiQuoia
+*/
+
+root { 
+    display: block;
+}
+
+.top#logos{
+    border-style: dashed;
+    border-width: thick;
+}
