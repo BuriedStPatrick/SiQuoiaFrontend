@@ -5,6 +5,7 @@
 package com.siquoia.view;
 
 import com.siquoia.command.Command;
+import com.siquoia.command.TargetCommand;
 import com.siquoia.exception.CommandException;
 import java.io.IOException;
 import javax.servlet.RequestDispatcher;
@@ -13,7 +14,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.iso_relax.dispatcher.Dispatcher;
 
 /**
  *
@@ -27,6 +27,8 @@ public class FrontController extends HttpServlet {
         String commandKey = req.getParameter("command");
         Command command = CommandFactory.getInstance().findCommand(commandKey);
         String target = null;
+        if(command == null)
+            command = new TargetCommand("login.jsp");
         try {
             target = command.execute(req);
         } catch (CommandException ce) {

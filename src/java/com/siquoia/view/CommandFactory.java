@@ -5,6 +5,7 @@
 package com.siquoia.view;
 
 import com.siquoia.command.Command;
+import com.siquoia.command.LoginCommand;
 import com.siquoia.command.TargetCommand;
 import java.util.HashMap;
 
@@ -28,8 +29,8 @@ public class CommandFactory {
     }
     
     private void setupCommands(){
-        commands.put(null, new TargetCommand("index.jsp"));
-        commands.put("home", new TargetCommand("index.jsp"));
+        commands.put("index", new TargetCommand("login.jsp"));
+        commands.put("login", new LoginCommand("home.jsp"));
     }
     
     public Command findCommand(String name){
