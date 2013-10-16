@@ -27,8 +27,6 @@ public class SiquoiaFrontController extends HttpServlet {
         String commandKey = req.getParameter("command");
         Command command = CommandFactory.getInstance().findCommand(commandKey);
         String target = null;
-        if(command == null)
-            command = new TargetCommand("login.jsp");
         try {
             target = command.execute(req);
         } catch (CommandException ce) {

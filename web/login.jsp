@@ -15,9 +15,9 @@
         <script>
         try {  
             $(document).ready(function() {
-                $("form").submit(function(){
-                    
-                });
+//                $("form").submit(function(){
+//                    alert("logging in");
+//                });
             });
         } catch (error) {
           console.error("Your javascript has an error: " + error);
@@ -36,9 +36,9 @@
                     Log in/Sign up
                 </div>
                 <div id="formcontent">
-                    <form action="FrontController" method="post">
-                        <input name="command"  id="email" placeholder="Email" type="email"/><br/>
-                        <input name="command"  id="password" placeholder="Password" type="password"/><br/>
+                    <form action="SiquoiaFrontController">
+                        <input name="email" placeholder="Email" type="email"/><br/>
+                        <input name="password" placeholder="Password" type="password"/><br/>
                         <button type="submit" name="command" value="login">Log in</button>
                     </form>
                 </div>

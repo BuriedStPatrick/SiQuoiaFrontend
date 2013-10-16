@@ -25,6 +25,7 @@ public class TargetCommand implements Command{
 //        {
 //            throw new CommandException(target);
 //        }
+        System.out.println("i should be here");
     return target;
   }
     
