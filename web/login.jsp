@@ -38,8 +38,8 @@
                 </h1>
                 <div id="formcontent">
                     <form action="SiquoiaFrontController">
-                        <input name="email" placeholder="Email" type="email"/><br/>
-                        <input name="password" placeholder="Password" type="password"/><br/>
+                        <input name="userName" placeholder="username" type="text"/><br/>
+                        <input name="password" placeholder="password" type="password"/><br/>
                         <button type="submit" name="command" value="login">Log in</button>
                     </form>
                 </div>

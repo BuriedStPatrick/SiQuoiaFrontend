@@ -21,4 +21,15 @@ public abstract class User {
         this.userName = userName;
     }
     
+    public long getUserId(){
+        return userId;
+    }
+    
+    public String getUserName(){
+        return userName;
+    }
+    
+    public String getPassword(){
+        return password;
+    }
 }

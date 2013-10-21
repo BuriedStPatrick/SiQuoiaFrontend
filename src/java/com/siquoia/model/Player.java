@@ -22,4 +22,20 @@ public class Player extends User{
         this.middleName = middleName;
         this.lastName = lastName;
     }
+    
+    public String getUserType(){
+        return userType;
+    }
+    
+    public String getFirstName(){
+        return firstName;
+    }
+    
+    public String getMiddleName(){
+        return middleName;
+    }
+    
+    public String getLastName(){
+        return lastName;
+    }
 }

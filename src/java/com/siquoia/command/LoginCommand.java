@@ -4,8 +4,11 @@
  */
 package com.siquoia.command;
 
-import com.siquoia.dummy.UserDummy;
+import com.siquoia.control.DBManager;
+import com.siquoia.exception.AuthenticationException;
 import com.siquoia.exception.CommandException;
+import com.siquoia.model.Player;
+import com.siquoia.model.User;
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -13,6 +16,8 @@ import javax.servlet.http.HttpServletRequest;
  * @author PC
  */
 public class LoginCommand extends TargetCommand{
+    
+    private DBManager manager = DBManager.getInstance();
 
     public LoginCommand(String target) {
         super(target);
@@ -20,11 +25,20 @@ public class LoginCommand extends TargetCommand{
 
     @Override
     public String execute(HttpServletRequest request) throws CommandException {
-        UserDummy person = new UserDummy("hej@hej.dk", "hej123");
-        if(person.getEmail().equals(request.getParameter("email")) && person.getPassword().equals(request.getParameter("password")))
-            return super.execute(request);
-        else
-            throw new CommandException(target);
+        String userName = request.getParameter("userName");
+        String password = request.getParameter("password");
+        User user;
+        try{
+           user = manager.login(userName, password);
+        }
+        catch(AuthenticationException ae){
+            throw new CommandException(ae.getErrorTarget());
+        }
+        
+        request.setAttribute("userId", user.getUserId());
+        request.setAttribute("userName", user.getUserName());
+        
+        return super.execute(request);
     }
     
 }

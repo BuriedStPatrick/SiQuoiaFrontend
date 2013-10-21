@@ -13,5 +13,7 @@
     </head>
     <body>
         <h1>LOGGED IN AND ON HOMEPAGE</h1>
+        User name: ${userName}
+        User ID:   ${userId}
     </body>
 </html>
