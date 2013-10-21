@@ -10,7 +10,53 @@ root {
     display: block;
 }
 
-.top#logos{
-    border-style: dashed;
-    border-width: thick;
+body{
+    background: #FFFFFF;
+    font-family: tahoma, verdana sans-serif;
+}
+
+div{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.content{
+    background: #FFCF69;
+    border-style: inset;
+    width: 15%;
+}
+
+#formbody{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.logos{
+    border-style: dotted;
+    border-width: 2px;
+}
+
+#logo{
+    border-radius: 10px;
+}
+
+input{
+    border-radius: 10px;
+    border-style: dotted;
+}
+
+button{
+    border-style: solid;
+    background: #b38471;
+    border-radius: 10px;
+}
+
+p{
+    
+}
+
+h1{
+    font-family: impact, sans-serif;
+    font-style: normal;
 }

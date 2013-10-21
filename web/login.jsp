@@ -27,15 +27,15 @@
     </head>
     <body>
         <div class="top">
-            <div id="logos">
-                INSERTION OF COMPANY LOGOS
+            <div class="logos">
+                <h1>SiQuoia</h1>
             </div>
         </div>
         <div class="content">
             <div id="formbody">
-                <div id="formheader">
+                <h1>
                     Log in/Sign up
-                </div>
+                </h1>
                 <div id="formcontent">
                     <form action="SiquoiaFrontController">
                         <input name="email" placeholder="Email" type="email"/><br/>
