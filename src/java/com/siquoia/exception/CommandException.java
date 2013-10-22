@@ -10,15 +10,15 @@ package com.siquoia.exception;
  * @author PC
  */
 public class CommandException extends Exception{
-    
-    String origin;
+    private String errorTarget;
 
-    public CommandException(String origin) {
-        this.origin = origin;
+    public CommandException(String errorTarget, String message, Throwable cause){
+      super(message, cause);
+      this.errorTarget = errorTarget;
     }
-    
-    public String getErrorTarget() {
-        return super.getMessage(); //To change body of generated methods, choose Tools | Templates.
+
+    public String getErrorTarget(){
+      return errorTarget;
     }
     
 }

@@ -32,7 +32,7 @@ public class LoginCommand extends TargetCommand{
            user = manager.login(userName, password);
         }
         catch(AuthenticationException ae){
-            throw new CommandException(ae.getErrorTarget());
+            throw new CommandException("Login Command", ae.getMessage(), ae);
         }
         
         request.setAttribute("userId", user.getUserId());

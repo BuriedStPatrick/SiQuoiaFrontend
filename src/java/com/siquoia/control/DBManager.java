@@ -15,7 +15,7 @@ import com.siquoia.model.User;
  * @author PC
  */
 public class DBManager {
-    private static DBManager instance;
+    private static DBManager    instance;
     private UserMapper          uMapper;
     private QuizMapper          qMapper;
     private LeaderboardMapper   lMapper;

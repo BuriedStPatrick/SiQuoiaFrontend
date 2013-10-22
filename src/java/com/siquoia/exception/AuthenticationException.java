@@ -8,10 +8,11 @@ package com.siquoia.exception;
  *
  * @author PC
  */
-public class AuthenticationException extends CommandException{
+public class AuthenticationException extends Exception{
 
-    public AuthenticationException(String origin) {
-        super(origin);
+    public AuthenticationException(String message){
+        super(message);
     }
+    
     
 }
