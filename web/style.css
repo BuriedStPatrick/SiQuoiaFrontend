@@ -11,52 +11,47 @@ root {
 }
 
 body{
-    background: #FFFFFF;
-    font-family: tahoma, verdana sans-serif;
+    background: #e6e6e6;
+    font-family: helvetica, verdana sans-serif;
+    font-size: 24px;
 }
 
 div{
-    width: 50%;
-    margin: 0 auto;
-    border-radius: 10px;
 }
 
 .content{
-    background: #FFCF69;
-    border-style: inset;
-    width: 15%;
+    background: #FFFFFF;
+    box-shadow: 1px 3px 10px;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px 10px 10px 10px;
 }
 
 #formbody{
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.logos{
-    border-style: dotted;
-    border-width: 2px;
-}
-
-#logo{
-    border-radius: 10px;
+    font-size: 10.5px;
+    width: 30%;
+    margin: 0 auto;
 }
 
 input{
-    border-radius: 10px;
-    border-style: dotted;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    font: helvetica, sans-serif;
+    font-size: 10.5px;
 }
 
 button{
-    border-style: solid;
-    background: #b38471;
-    border-radius: 10px;
+    border: none;
+    background: #e6e6e6;
 }
 
 p{
-    
+    font-family: helvetica, sans-serif;
+    font-size: 10.5px;
 }
 
 h1{
-    font-family: impact, sans-serif;
-    font-style: normal;
+    font-family: helvetica, sans-serif;
+    font-size: 15px;
 }

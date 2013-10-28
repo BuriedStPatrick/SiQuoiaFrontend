@@ -37,9 +37,9 @@
                     Log in/Sign up
                 </h1>
                 <div id="formcontent">
-                    <form action="SiquoiaFrontController">
-                        <input name="userName" placeholder="username" type="text"/><br/>
-                        <input name="password" placeholder="password" type="password"/><br/>
+                    <form action="SiquoiaFrontController" method="post">
+                        username:<input name="userName" placeholder="username" type="text"/><br/>
+                        password:<input name="password" placeholder="password" type="password"/><br/>
                         <button type="submit" name="command" value="login">Log in</button>
                     </form>
                 </div>
