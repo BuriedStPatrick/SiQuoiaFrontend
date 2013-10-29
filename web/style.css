@@ -6,10 +6,6 @@
         This sheet contains the standard style for the site SiQuoia
 */
 
-root { 
-    display: block;
-}
-
 body{
     background: #e6e6e6;
     font-family: helvetica, verdana sans-serif;
@@ -23,7 +19,7 @@ div{
     background: #FFFFFF;
     box-shadow: 1px 3px 10px;
     margin: 0 auto;
-    width: 50%;
+    width: 25%;
     padding: 10px 10px 10px 10px;
 }
 
